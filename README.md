@@ -1,68 +1,79 @@
 # HealthSync Flutter Project
-HealthSync is a comprehensive health management application designed to assist users in managing their health, with a current focus on controlling type 2 diabetes. This application acts as a partner in the user's health management journey, providing various functionalities to monitor and improve health.
 
-## Project Structure
-The HealthSync project consists of the following key files:
+## Overview
+HealthSync is a comprehensive health management application tailored to assist users in managing their health, with a primary focus on controlling type 2 diabetes. This application serves as a digital partner in the user's health journey, offering various functionalities to monitor and improve health outcomes.
 
-### Database Files:
-
-**dbhelper.dart:** This file manages the storage of user details, including the type of disease, user name, and emergency contacts.
-
-**dbhelper1.dart:** This file stores the user's daily health inputs such as blood pressure, sugar levels, exercise duration, diet details, and sleep duration.
-### User Interface Files:
-
-**editprofile.dart:** This file contains the interface for users to input their personal information.
-
-**emergency.dart:** This file handles the functionality for making emergency calls when the emergency button is pressed.
-
-**fitness.dart:** This file provides suggestions for different types of exercises.
-
-**profile.dart:** This file displays the user's profile page.
-
-**proginput.dart:** This file collects daily health statistics from the user.
-
-**progress.dart:** This file displays the user's health progress over time.
-
-**recipie.dart:** This file presents recipes suitable for diabetes management.
-
-**ytube.dart:** This file retrieves relevant health-related videos from YouTube.
-
-**main.dart:** This file is currently empty and does not contain any code.
-### Homepage File:
-
-**sidebar.dart:** This file contains the code for the homepage and handles sidebar navigation functionality.
+## Tech Stack
+- **Flutter & Dart:** Core framework and language for developing the application.
+- **SQLite:** Database for storing user data and health inputs.
+- **APIs:** Integration with Edamam API and Google YouTube API.
+- **Version Control:** GitHub for version control and collaboration.
 
 ## APIs Used
-The project utilizes the following APIs:
+- **Edamam API:** Retrieves nutrition and recipe information.
+- **Google YouTube API:** Fetches health-related videos from YouTube.
 
-**Edamam API:** Used for retrieving nutrition and recipe information.
+> **Note:** Replace the API keys for the Edamam API and Google YouTube API with your own keys in the respective files.
 
-**Google YouTube API:** Used for retrieving relevant health-related videos from YouTube.
-
-**Note:** API keys for the Edamam API and Google YouTube API must be replaced with your own keys.
 ## Assets
-The project uses two specific images as assets:
+The project uses specific images as assets:
 
-Image 1 : https://illustimage.com/?id=2272
+- **Image 1:** [Link](https://illustimage.com/?id=2272)
+- **Image 2:** [Link](https://thumb.ac-illust.com/31/31829d1be0a1381998bbbcd5f3beb181_w.jpeg)
 
-Image 2 : https://thumb.ac-illust.com/31/31829d1be0a1381998bbbcd5f3beb181_w.jpeg
+### Steps to Include Assets:
+1. Download the images from the provided links.
+2. Add these images to the `assets` folder in your project directory.
+3. Update the `pubspec.yaml` file to include these assets under the `assets:` section.
 
-These images should be downloaded and included in the assets folder.
+```yaml
+flutter:
+  assets:
+    - assets/image1.jpeg
+    - assets/image2.jpeg
+```
+## Installation
 
-## How to Run the Project
-To run the HealthSync project, follow these steps:
+### Prerequisites
+Ensure that the following tools are installed on your system:
+- **Flutter SDK:** Follow the [Installation Guide](https://flutter.dev/docs/get-started/install).
+- **Dart SDK:** Included with Flutter.
+- **A suitable code editor:** For example, Visual Studio Code or Android Studio.
 
-### Download and include the assets:
+### Steps to Run the Application
 
-Download the images from the provided links.
-Add these images to the assets folder in your project directory.
-### Edit pubspec.yaml:
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/username/HealthSync.git
+   cd HealthSync
+   ```
 
-Open the pubspec.yaml file.
-Edit the assets and the depecdencies
-### Run the Main Application:
+2. **Install Dependencies:**
+   Update your Flutter dependencies by running:
+   ```bash
+   flutter pub get
+   ```
 
-Execute the sidebar.dart file to start the application.
-Use the command:      flutter run lib/sidebar.dart
+3. **Download and Include Assets:**
+   - Download the specified images from the provided links.
+   - Place them in the `assets/` directory of your project.
+   - Ensure the `pubspec.yaml` file is correctly configured to include these assets:
+     ```yaml
+     flutter:
+       assets:
+         - assets/image1.jpeg
+         - assets/image2.jpeg
+     ```
 
+4. **Configure API Keys:**
+   Replace the placeholder API keys with your own in the relevant Dart files (`recipie.dart` and `ytube.dart`).
 
+5. **Run the Application:**
+   Execute the application using the following command:
+   ```bash
+   flutter run lib/sidebar.dart
+   ```
+## Contributions
+Contributions to the HealthSync project are welcome. If you'd like to contribute, please submit a pull request with your changes, and we'll review it for inclusion in the project.
+
+We appreciate your contributions and look forward to collaborating with you!
